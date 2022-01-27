@@ -2,10 +2,10 @@
 ## Usage
 The application has 2 endpoints:  
 **GET**`/currencies/{currency}?{filter(optional)}`  
-###parameters:  
+### parameters:  
 * currency given currency
 * filter currencies to show (gets all if not given)  
-###example response:
+### example response:
 ```json
 {
   "source":"BTC",
@@ -15,13 +15,13 @@ The application has 2 endpoints:
   }
   }
 ```  
-###example of use:
+### example of use:
 `/currencies/BTC?filter=USD&filter=ETH`
 
 **POST**`/currencies/exchange`
-###parameters:
+### parameters:
 * currencyExchangeInput request body  
-###example response:
+### example response:
 ```JSON
 {
 "from": "BTC",
@@ -43,12 +43,12 @@ The application has 2 endpoints:
 ]
 }
 ```
-###example of use:
+### example of use:
 `/currencies/exchange`
 
 To test the solution for example Postman Application can be used.  
 
-##Installation
+## Installation
 
 To run the application you need to have one additional external library:  
 https://github.com/Philipinho/CoinGecko-Java  
